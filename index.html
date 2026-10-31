@@ -369,6 +369,44 @@
       font-size: 14px;
     }
 
+    .clinic-highlight {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  margin: 4px 0 20px;
+  padding: 15px;
+  background: var(--sage);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+}
+
+.clinic-highlight-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--green);
+  font-size: 21px;
+}
+
+.clinic-highlight strong {
+  display: block;
+  color: var(--dark);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+.clinic-highlight p {
+  margin-top: 3px;
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
     .business-card ul {
       width: 100%;
       margin-bottom: 22px;
@@ -1051,37 +1089,45 @@
 
 .contact-detail {
   width: 100%;
-  padding: 16px 0;
+  padding: 18px 0;
   border-top: 1px solid var(--border);
   overflow-wrap: anywhere;
 }
 
 .contact-detail > span {
   display: block;
-  margin-bottom: 7px;
-  color: var(--text);
-  font-size: 12px;
-  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
 }
 
 .contact-detail p,
 .contact-detail a {
   margin: 0;
   color: var(--green);
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.contact-card h3 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .contact-detail a {
   text-decoration: none;
 }
 
-.contact-detail a:hover,
-.email-form-link:hover {
+.contact-detail a:hover {
+  color: var(--dark);
   text-decoration: underline;
 }
+
 
 .contact-detail p + a {
   display: inline-block;
@@ -1257,6 +1303,12 @@
   text-decoration: underline;
 }
 
+.medical-hero-image > img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
 @media (max-width: 600px) {
   .shared-address {
     align-items: flex-start;
@@ -1351,7 +1403,7 @@
 
           <div class="medical-hero-image">
             <img
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=90"
+              src="https://relievetherapeutics.com.au/cdn/shop/articles/pharamcist.png?v=1764370415"
               alt="Healthcare professionals in a clinical care setting"
               fetchpriority="high"
             >
@@ -1390,6 +1442,13 @@
             </div>
             <h2>Neighborhood Doctor's Clinic</h2>
             <p>Find clinic information, appointment details and contact options for your medical inquiries.</p>
+            <div class="clinic-highlight">
+              
+              <div>
+                <strong>Female Physician on Our Team</strong>
+                <p>Personalized medical care in a welcoming environment.</p>
+              </div>
+            </div>
             <ul>
               <li>Doctor appointments</li>
               <li>Clinic information</li>
@@ -1495,7 +1554,7 @@
       <div class="container about-grid">
         <div class="about-visual">
           <img
-            src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=85"
+            src="https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?auto=format&fit=crop&fm=jpg&q=80&w=1600"
             alt="Healthcare professional working in a clinical environment"
             loading="lazy"
           >
