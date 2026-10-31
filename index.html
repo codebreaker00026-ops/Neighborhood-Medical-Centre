@@ -1114,9 +1114,23 @@
   overflow-wrap: anywhere;
 }
 .contact-card h3 {
-  font-size: 26px;
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
   font-weight: 800;
-  line-height: 1.35;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #263F35;
+  margin: 0 0 14px;
+}
+
+/* Gold accent under each contact card title */
+.contact-card h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin-top: 14px;
+  background: #B79A62;
 }
 
 .contact-detail a {
@@ -1357,7 +1371,12 @@
     letter-spacing: -0.6px !important;
   }
 }
-
+@media (max-width: 700px) {
+  .contact-card h3 {
+    font-size: 27px;
+    letter-spacing: -0.6px;
+  }
+}
   </style>
 </head>
 
