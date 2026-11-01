@@ -327,6 +327,20 @@
       box-shadow: 0 14px 32px rgba(32, 57, 47, .09);
     }
 
+    /* Small image header attached to the top of each business card */
+    .business-card-image {
+  display: block;
+  align-self: stretch;
+  width: calc(100% + 60px);
+  max-width: none;
+  height: 280px;
+  flex: 0 0 280px;
+  margin: -30px -30px 24px;
+  border-radius: 9px 9px 0 0;
+  object-fit: cover;
+  object-position: top center;
+}
+
     .business-card-top {
       display: flex;
       width: 100%;
@@ -984,6 +998,12 @@
         padding: 24px;
       }
 
+      .business-card-image {
+        width: calc(100% + 48px);
+        height: 145px;
+        margin: -24px -24px 22px;
+      }
+
       .service-options .business-card h2 {
         font-size: 27px;
         letter-spacing: -.6px;
@@ -1103,6 +1123,15 @@
         animation-iteration-count: 1 !important;
       }
     }
+
+    @media (max-width: 700px) {
+  .business-card-image {
+    width: calc(100% + 48px);
+    height: 230px;
+    flex-basis: 230px;
+    margin: -24px -24px 22px;
+  }
+}
   </style>
 </head>
 
@@ -1167,6 +1196,12 @@
 
           <!-- PHARMACY -->
           <article class="business-card" id="pharmacy-contact">
+            <img
+              class="business-card-image"
+              src="https://images.unsplash.com/photo-1675524375084-9d1ea6840bc9?auto=format&fit=crop&w=1000&q=85"
+              alt="Bottle of pills on a table"
+              loading="lazy"
+            >
             <div class="business-card-top">
               <div class="business-icon" aria-hidden="true">℞</div>
               <span class="business-label">PHARMACY SERVICES</span>
@@ -1205,6 +1240,12 @@
 
           <!-- CLINIC -->
           <article class="business-card" id="clinic-contact">
+            <img
+              class="business-card-image"
+              src="https://images.unsplash.com/photo-1758691462651-611d730c5272?auto=format&fit=crop&w=1000&q=85"
+              alt="Doctor consulting with a patient in a medical office"
+              loading="lazy"
+            >
             <div class="business-card-top">
               <div class="business-icon" aria-hidden="true">♡</div>
               <span class="business-label">MEDICAL SERVICES</span>
